@@ -35,10 +35,10 @@ if monto > 0:
     fee = calcular_fee(monto)
     porcentaje_aplicado = (fee / monto) * 100
     st.success(f"🧮 El fee total a pagar por una inversión de ARS {monto:,.0f} es: **ARS {fee:,.2f}**")
-    st.info(f"📊 Esto significa que el fee es de **{porcentaje_aplicado:.2f}%**.")
 
     st.markdown("---")
     if monto <= 400_000:
         st.caption("💡 El fee mínimo de gestión es de ARS 80.000.")
     else:
+        st.info(f"📊 Esto significa que el fee es de **{porcentaje_aplicado:.2f}%**.")
         st.caption("El fee se calcula por tramos: el porcentaje se aplica solo a la parte del monto que cae en cada tramo.")

@@ -31,9 +31,12 @@ def calcular_fee(monto):
     return round(fee_total, 2)
 
 # Resultado
+# Resultado
 if monto > 0:
     fee = calcular_fee(monto)
+    porcentaje_aplicado = (fee / monto) * 100
     st.success(f"🧮 El fee total a pagar por una inversión de ARS {monto:,.0f} es: **ARS {fee:,.2f}**")
+    st.info(f"📊 Esto equivale a un **{porcentaje_aplicado:.2f}%** sobre el total invertido.")
 
     st.markdown("---")
     st.caption("El fee se calcula por tramos: el porcentaje se aplica solo a la parte del monto que cae en cada tramo.")

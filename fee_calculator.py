@@ -13,7 +13,7 @@ tramos = [
     {"min": 2_000_001, "max": 3_000_000, "tipo": "porcentaje", "valor": 0.12},
     {"min": 3_000_001, "max": 4_000_000, "tipo": "porcentaje", "valor": 0.10},
     {"min": 4_000_001, "max": 6_000_000, "tipo": "porcentaje", "valor": 0.08},
-    {"min": 6_000_001, "max": float("inf"), "tipo": "porcentaje", "valor": 0.03},
+    {"min": 6_000_001, "max": float("inf"), "tipo": "porcentaje", "valor": 0.01},
 ]
 
 # Entrada de usuario

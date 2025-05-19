@@ -8,12 +8,12 @@ st.markdown("Calculá el fee correspondiente según el monto de inversión en pa
 # Tabla de tramos
 tramos = [
     {"min": 0, "max": 400_000, "tipo": "fijo", "valor": 80_000},
-    {"min": 400_001, "max": 1_000_000, "tipo": "porcentaje", "valor": 0.20},
-    {"min": 1_000_001, "max": 2_000_000, "tipo": "porcentaje", "valor": 0.17},
-    {"min": 2_000_001, "max": 3_000_000, "tipo": "porcentaje", "valor": 0.14},
-    {"min": 3_000_001, "max": 4_000_000, "tipo": "porcentaje", "valor": 0.12},
-    {"min": 4_000_001, "max": 6_000_000, "tipo": "porcentaje", "valor": 0.10},
-    {"min": 6_000_001, "max": float("inf"), "tipo": "porcentaje", "valor": 0.07},
+    {"min": 400_001, "max": 1_000_000, "tipo": "porcentaje", "valor": 0.18},
+    {"min": 1_000_001, "max": 2_000_000, "tipo": "porcentaje", "valor": 0.15},
+    {"min": 2_000_001, "max": 3_000_000, "tipo": "porcentaje", "valor": 0.12},
+    {"min": 3_000_001, "max": 4_000_000, "tipo": "porcentaje", "valor": 0.10},
+    {"min": 4_000_001, "max": 6_000_000, "tipo": "porcentaje", "valor": 0.08},
+    {"min": 6_000_001, "max": float("inf"), "tipo": "porcentaje", "valor": 0.03},
 ]
 
 # Entrada de usuario

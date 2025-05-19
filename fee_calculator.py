@@ -2,8 +2,8 @@ import streamlit as st
 
 st.set_page_config(page_title="Calculadora de Fee", layout="centered")
 
-st.title("💸 Calculadora de Fee por Tramos")
-st.markdown("Calculá el fee correspondiente según el monto de inversión en pauta publicitaria.")
+st.title("💸 Calculadora de Fee")
+st.markdown("Calculá el fee correspondiente según el monto de inversión en pauta que querés hacer.")
 
 # Tabla de tramos
 tramos = [

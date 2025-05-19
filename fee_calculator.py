@@ -31,7 +31,6 @@ def calcular_fee(monto):
     return round(fee_total, 2)
 
 # Resultado
-# Resultado
 if monto > 0:
     fee = calcular_fee(monto)
     porcentaje_aplicado = (fee / monto) * 100
@@ -39,4 +38,7 @@ if monto > 0:
     st.info(f"📊 Esto significa que el fee es de **{porcentaje_aplicado:.2f}%**.")
 
     st.markdown("---")
-    st.caption("El fee se calcula por tramos: el porcentaje se aplica solo a la parte del monto que cae en cada tramo.")
+    if monto <= 400_000:
+        st.caption("💡 El fee mínimo de gestión es de ARS 80.000.")
+    else:
+        st.caption("El fee se calcula por tramos: el porcentaje se aplica solo a la parte del monto que cae en cada tramo.")

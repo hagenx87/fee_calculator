@@ -9,9 +9,9 @@ st.markdown("Calculá el fee correspondiente según el monto de inversión en pa
 tramos = [
     {"min": 0, "max": 400_000, "tipo": "fijo", "valor": 80_000},
     {"min": 400_001, "max": 1_000_000, "tipo": "porcentaje", "valor": 0.18},
-    {"min": 1_000_001, "max": 2_000_000, "tipo": "porcentaje", "valor": 0.15},
-    {"min": 2_000_001, "max": 3_000_000, "tipo": "porcentaje", "valor": 0.12},
-    {"min": 3_000_001, "max": 4_000_000, "tipo": "porcentaje", "valor": 0.10},
+    {"min": 1_000_001, "max": 2_000_000, "tipo": "porcentaje", "valor": 0.13},
+    {"min": 2_000_001, "max": 3_000_000, "tipo": "porcentaje", "valor": 0.10},
+    {"min": 3_000_001, "max": 4_000_000, "tipo": "porcentaje", "valor": 0.8},
     {"min": 4_000_001, "max": 6_000_000, "tipo": "porcentaje", "valor": 0.05},
     {"min": 6_000_001, "max": float("inf"), "tipo": "porcentaje", "valor": 0.01},
 ]
